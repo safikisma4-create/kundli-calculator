@@ -122,7 +122,7 @@ with st.container():
             max_value=datetime.date.today()
         )
     with col2:
-        birth_time = st.time_input("Birth Time", value=datetime.time(12, 0))
+        birth_time = st.time_input("Exact Birth Time", value=datetime.time(12, 0), step=60)
         birth_place = st.text_input("Birth City & Country", placeholder="e.g., Jaipur, India")
 
     trait = st.selectbox(
